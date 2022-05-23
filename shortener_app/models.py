@@ -12,4 +12,4 @@ class URL(Base):
     secret_key = Column(String, unique=True, index=True)
     target_url = Column(String, index=True)
     is_active = Column(Boolean, default=True)
-    click = Column(Integer, default=0)
+    clicks = Column(Integer, default=0)
